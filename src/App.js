@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className='App'>
+      <div className='photo'>
+        <img
+          className='profile-picture'
+          src='/images/profilePicture.jpg'
+          alt='profile'
+        />
+      </div>
+      <div className='name'>Francis Lumban III</div>
+      <div className='description'>Software Engineer</div>
+      <div className='links'>
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='https://github.com/flumban3?tab=repositories'
+          target='_blank'
+          rel='noreferrer'
         >
-          Learn React
+          <button className='github'>GitHub</button>
         </a>
-      </header>
+        <a
+          href='https://www.linkedin.com/in/francis-lumban-iii-54bb16177/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <button className='linkedIn'>LinkedIn</button>
+        </a>
+        <a
+          href='https://www.instagram.com/flumban3/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <button className='instagram'>Instagram</button>
+        </a>
+      </div>
     </div>
   );
 }
